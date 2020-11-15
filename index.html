@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="./public/img/title.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js"></script>
+    <title>Developer</title>
+</head>
+<body>
+ 
+ <div id="wrapper">
+     <div id="responsivenavbar">
+     <div id="togglebtn">
+    <label for="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+     </div>
+     <input type="checkbox" id="toggle">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./public/img/title.png" alt="">
+        <h1><a href="index.html">Developer<span style="color: lightsalmon;">.com</span></a></h1>
+        </div>
+        <ul>
+            <li><a href="#headsection">Home</a></li>
+            <li><a href="#TeemHeading">Team</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+   </div>
+<!-- Sec -->
+<section id="headsection">
+    <h1 onmouseover="textchange('white');"onmouseout="textchange('lightsalmon');" id="sectionheading" >We <br> Develop<br> Your<br> Dreem</h1>
+    
+    <img id="sectionimage" height="350px" src="./public/img/section.png" alt="sectionimg">
+</section>
+
+<!-- TEEM -->
+<div id="TeemHeading">
+    <h1>Our Team</h1>
+ <div id="team">
+          
+
+       <div id="box">
+           <img src="./public/img/umer.jpg" alt="" >
+           <div class="boxContent">
+            <h1 class="boxtext">Umer Shah</h1>
+            <p class="boxtext">FrontEnd Developer (Dawood University Of Engineering & Technology)</p>
+           </div>
+       </div>
+
+       <div id="box">
+        <img src="./public/img/talha.jpg" alt="" >
+        <div class="boxContent">
+            <h1 class="boxtext">Talha Azeem</h1>
+            <p class="boxtext">FullStack Developer (Dawood University Of Engineering & Technology)</p>
+        
+        </div>
+    </div>
+
+    <div id="box">
+        <img src="./public/img/owais.jpg" alt="" >
+        <div class="boxContent">
+            <h1 class="boxtext">Owais Ahmed Khan</h1>
+           <p class="boxtext">DevOps Engineer (Dawood University Of Engineering & Technology)</p>
+        </div>
+    </div>
+    <div id="box">
+        <img src="./public/img/rehman.jpg" alt="" >
+        <div class="boxContent">
+            <h1 class="boxtext">Malik Jahangir</h1>
+            <p class="boxtext">Backend Developer (Dawood University Of Engineering & Technology)</p>
+        </div>
+    </div>
+
+
+    <div id="box">
+        <img src="./public/img/ashar.jpg" alt="" >
+        <div class="boxContent">
+            <h1 class="boxtext">Ashar Ahmed</h1>
+            <p class="boxtext">Database Administrator (Dawood University Of Engineering & Technology)</p>
+         </div>
+    </div>
+
+    <div id="box">
+        <img src="./public/img/asad.jpg" alt="" >
+        <div class="boxContent">
+            <h1 class="boxtext">Asad Khan</h1>
+            <p class="boxtext">Senior Developer and Graphic Designer (SMI University)</p>
+        </div>
+    </div>
+
+
+
+ </div>
+</div>
+       <div id="About">
+
+         <h1>About Us</h1>
+         <p>Developer.com is a custom software development company of 65 employees, founded in 2011. Their headquarters is in Austin, Texas, with other locations in Warsaw, Poland, Minsk, Belarus, and New York. They offer services in custom software development, and application management and support.</p>
+         <p>We developed a large, complex .NET application for a marketing agency. The client provided the blueprints, and Syberry built a multi-faceted application with a .NET backend. They also implemented numerous dependencies and third-party integrations. The client praised their high-quality work.</p> 
+         <p>Developer.com is a custom software development company of 65 employees, founded in 2011. Their headquarters is in Austin, Texas, with other locations in Warsaw, Poland, Minsk, Belarus, and New York. They offer services in custom software development, and application management and support.</p>
+         <p>We developed a large, complex .NET application for a marketing agency. The client provided the blueprints, and Syberry built a multi-faceted application with a .NET backend. They also implemented numerous dependencies and third-party integrations. The client praised their high-quality work.</p> 
+        
+         <p><q>The most impressive things about Syberry were their attention to detail and communication style.” – CEO, Marketing Agency
+        </q></p>
+      
+       </div>
+    
+<!-- Footer -->
+<div id="contact">
+      
+            
+    <div class="Message">
+         <form action="">
+             <fieldset>
+                 <legend>Contact Us</legend>
+                     <input type="text" placeholder="Name"  maxlength="50" id="name">
+                    <input type="email" placeholder="Email"  maxlength="50" id="email">
+                   <textarea rows="5" cols="22" maxlength="500" id="message">Enter text here...</textarea>
+                               </fieldset>
+             <input id="formbtn" type="button" value="Send Message" onclick="submitbtn();">
+         </form>
+    </div>
+    <div id="social">
+    <a href="#"> <i class="fa fa-facebook" style="color: #3b5998 ;" id="fb" onmouseover="socialhover('#3b5998');" onmouseout="socialhover('lightsalmon');"></i></a>
+    <a href="#"><i class="fa fa-twitter" style="color:#00acee;" id="tw" onmouseover="socialhover1('#00acee');" onmouseout="socialhover1('lightsalmon');"></i></a>
+    <a href="#"><i class="fa fa-linkedin" style="color:#0e76a8 ;" id="ln" onmouseover="socialhover2('#0e76a8');" onmouseout="socialhover2('lightsalmon');"></i></a>
+    <a href="#"><i class="fa fa-instagram" style="color: #c13584 ;" id="ins" onmouseover="socialhover3('#c13584');" onmouseout="socialhover3('lightsalmon');"></i></a>
+</div>
+
+     <div id="arrow">
+         <h1>Contact Us</h1>
+        <a href="#"><i class="fa fa-arrow-right" style="color: white;"></i></a>
+     </div>
+       <div id="creater">
+           <p>Created By Malik Muhammad Jahangir</p>
+       </div>
+</div>
+
+ </div>
+</body>
+</html>

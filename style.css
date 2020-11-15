@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+   font-family: mono;
+   src: url("./public/Text_Mono/SyneMono-Regular.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+      background-color: white;
+}
+#responsivenavbar{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #232324;
+}
+#navbar{
+    width: 100%;
+    background-color:#232324;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+}
+#logo{
+    color: white;
+    padding: 5px;
+    font-family: cursive; 
+    font-size: 15px;
+    display: flex;
+}
+#logo>img{
+    margin-right: 10px;
+    height: 40px;
+    width: 60px;
+}
+#navbar>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 30px;
+    transition: all 0.5s;
+}
+#navbar>ul>li{
+    line-height: 30px;
+    font-family: mono;
+    font-size: 17px;
+    margin-left: 50px;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar>ul>li:hover>a{
+    color: lightsalmon;
+}
+#toggle{
+    display: none;
+}
+#togglebtn{
+    background-color: #232324;
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 40px;
+    height: 50px;
+    z-index: 1;
+    
+}
+#togglebtn label{
+    color: yellow;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#togglebtn label span{
+    background-color: white;
+    height: 2px;
+    width: 60%;
+    margin: 2px 0px;
+  
+}
+#togglebtn{
+    display: none;
+}
+/* Section */
+#headsection{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('./public/img/background.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    
+    
+}
+#headsection>h1{
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 50px 20px;
+    color: lightsalmon;
+    text-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+#headsection>img{
+
+    padding: 100px 20px;
+    
+}
+/* TEAM */
+#team{
+    background-color:#232324;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#box{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border: 5px solid lightsalmon;
+    box-shadow: 5px 5px 5px 7px black;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px 50px;
+}
+#box>img{
+    width: 100%;
+    height: 200px;
+  
+}
+.boxContent{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    padding-top: 100px;
+}
+#box:hover .boxtext{
+   color: lightsalmon;
+}
+.boxtext{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#TeemHeading{
+    background-color: #232324;
+    padding: 100px 0px;
+}
+#TeemHeading>h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: mono;
+    color: white;
+    text-shadow: 2px 2px 5px lightsalmon;
+}
+/* About us */
+#About{
+  height: 550px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #232324;
+}
+#About>h1{
+    text-align: center;
+    font-family: mono;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 5px lightsalmon;
+}
+#About p{ 
+    text-align: center;
+    padding-top: 10px ;
+    width: 60%;
+    margin: 10px 180px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: lightsalmon;
+}
+#contact{
+    height: 400px;
+    width: 100%;
+    background-color: #232324;
+}
+/* ----------------------------------------------Footer------------------------------------------- */
+#contact{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid lightsalmon;
+    border-bottom: 5px solid black;
+    display: flex;
+    
+}
+.Message{
+    margin-top: 50px;
+    height: 550px;
+    width: 1000px;
+    background-color: lightsalmon;
+    position: absolute;
+    left: 90%;
+    transition: all 0.5s;
+    border-radius: 50px 0px 0px 0px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 20px lightsalmon;
+    z-index: 1;
+}
+.Message:hover{
+    left: 40%;
+}
+form{
+    padding: 50px;
+}
+fieldset{
+    width: 300px;
+    height: 350px;
+    padding: 50px;
+    border: 3px solid black;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* position: relative; */
+}
+fieldset>input{
+  padding: 10px;
+  border: 2px solid black;
+  background-color: lightsalmon;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  width: 300px;
+  outline: none;
+}
+fieldset>textarea{
+    padding: 13px;
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color: lightsalmon;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 295px;
+    outline: none;
+  }
+#formbtn{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;    
+    color: lightsalmon;
+    font-family: mono;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px  black;
+    position: absolute;
+    top: 480px;
+    left: 200px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#formbtn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+  #social{
+      margin-top: 40px;
+      width: 90px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+  }
+  #social i{
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      background-color: black;
+      text-align: center;
+      line-height: 100px;
+      border: 3px solid lightsalmon;
+      font-size:70px;
+  }
+  
+  #arrow{
+      color: white;
+      width: 210px;
+      height: 100px;
+      display: flex;
+      margin: 250px 250px;
+      font-family: mono;
+      font-size: 20px;
+      padding: 10px;
+  }
+  #arrow>h1{
+      margin-right:15px;
+  }
+  #arrow i{
+    font-size:60px;
+  }
+  #creater{
+      font-family: sans-serif;
+      color: white;
+      position: absolute;
+      right: 350px;
+      bottom: 0;
+  }
+  
+
+@media (max-width:894px) and (min-width: 729px){
+   
+   /* Section */
+#headsection{
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 100%;   
+}
+#headsection>img{
+    width: 300px;
+    padding: 100px 20px;
+    
+  }
+  #box{
+    margin-top: 30px;
+    height: 200px;
+    width: 220px;
+}
+ #About p{ 
+    margin: 10px 150px;
+  }
+  #About>h1{
+    font-size: 40px;
+}
+#creater{
+    right: 250px;
+}
+
+}
+
+@media (max-width:730px){
+    #navbar{
+        flex-direction: column;
+    }
+    #logo{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    /* sectiom */
+    #headsection{
+    flex-direction: column;
+    padding-top: 50px; 
+    height: 1000px;
+    background-size: auto;
+       
+    }
+    #headsection>h1{
+        font-size: 100px;
+        text-align: center;
+    }
+    /* box */
+   
+    #box{
+        margin-top: 30px;
+        height: 200px;
+        width: 220px;
+    }
+    #About{
+        height: 1000px;
+
+    }
+    #About p{ 
+        margin: 10px 110px;
+    }
+    #About>h1{
+        font-size: 40px;
+    }
+   #contact{
+    height: 400px;
+   
+}
+.Message{
+    height: 350px;
+    width: 1000px;
+}
+.Message:hover{
+    left: 30%;
+}
+form{
+    padding: 25px;
+}
+fieldset{
+    width: 300px;
+    height: 240px;
+    padding: 25px;
+    border: 3px solid black;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+fieldset>input{
+  padding: 5px;
+  font-size: 12px;
+  width: 180px;
+
+}
+fieldset>textarea{
+    padding: 10px;
+    width: 170px;
+    font-size: 12px;
+    height: 60px;
+  }
+  #formbtn{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    top: 300px;
+    left: 100px;
+}
+  /*social  */
+  #social{
+    margin-top: 60px;
+    width: 90px;
+    padding: 10px;
+}
+#social i{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    line-height: 60px;
+    font-size:40px;
+ }
+  #arrow{
+    color: white;
+    width: 110px;
+    height: 50px;
+    display: flex;
+    margin: 170px 80px;
+    font-family: mono;
+    font-size: 10px;
+    padding: 5px;
+}
+#arrow>h1{
+    margin-right:15px;
+}
+#arrow i{
+    font-size:40px;
+}
+#creater{
+    font-size: 10px;
+    right: 250px;
+}
+
+
+}
+
+@media (max-width:454px){
+    #logo{
+        font-size: 15px;
+        justify-content: flex-start;
+    }
+    #logo>img{
+        margin-right: 10px;
+        height: 40px;
+        width: 50px;
+    } 
+    
+    #navbar>ul{
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        
+    }
+    #navbar>ul>li{
+        text-align: center;          
+    } 
+    #toggle:checked+ #navbar>ul{
+        display: flex;
+        
+    } 
+    #togglebtn{
+        display:flex;
+        
+    }
+    /* sectiom */
+    #headsection{
+    flex-direction: column;
+    height: 800px;
+    }
+    #headsection>h1{
+        font-size: 70px;
+        padding-top: 100px;
+    }
+    #headsection>img{
+        padding-top: 20px;
+    }
+    /* boxes */
+    
+    #About{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 1000px;
+    }
+    #About p{ 
+        margin: 10px 70px;
+    }
+    #About>h1{
+        font-size: 30px;
+    }
+    /* Footer */
+    #contact{
+        height: 600px;
+       
+    }
+    .Message{
+        height: 450px;
+        width: 1000px;
+    }
+    .Message:hover{
+        left: 20%;
+    }
+    form{
+        padding: 25px;
+    }
+    fieldset{
+        width: 170px;
+        height: 280px;
+        padding: 25px;
+        border: 3px solid black;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    fieldset>input{
+      padding: 7px;
+      font-size: 12px;
+      width: 170px;
+   
+    }
+    fieldset>textarea{
+        padding: 10px;
+        width: 160px;
+        font-size: 12px;
+        height: 100px;
+      }
+      #formbtn{
+        /* width: 100px;
+        height: 30px; */
+        line-height: 30px;
+        /* font-size: 12px; */
+        /* top: 300px; */
+        /* left: 100px; */
+        top: 340px;
+    } 
+    /*social  */
+    #social{
+        margin-top: 60px;
+        width: 90px;
+        padding: 10px;
+    }
+    #social i{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        line-height: 50px;
+        font-size:40px;
+    }
+    #arrow{
+        color: white;
+        width: 110px;
+        height: 50px;
+        display: flex;
+        margin: 170px 80px;
+        font-family: mono;
+        font-size: 10px;
+        padding: 5px;
+    }
+    #arrow>h1{
+        margin-right:15px;
+    }
+    #arrow i{
+        font-size:40px;
+    }
+    #creater{
+        font-size: 10px;
+        right: 80px;
+    }
+    
+}
